@@ -10,6 +10,7 @@
         @media (max-width: 768px) {
             display: block;
             margin: 0 auto;
+            padding-bottom: 16px;
         }
     }
 
@@ -18,6 +19,10 @@
 
         &__title {
             padding-bottom: 16px;
+
+            @media (max-width: 768px) {
+                text-align: center;
+            }
         }
 
     }
