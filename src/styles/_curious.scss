@@ -2,6 +2,7 @@
 
 .curiosidades {
     background-color: var.$corDeFundoBody2;
+    padding: 24px;
     padding-bottom: 80px;
 
         
@@ -20,9 +21,24 @@
     &__conteudo {
         display: flex;
         align-items: space-between;
+        
+        @media (max-width: 768px) {
+            display: block;
+            padding: 24px;
+            padding-bottom: 0;
+
+            img {
+                width: 100%;
+            }
+        }
 
             &__texto {
                 padding: 64px 64px 0 0;
+
+                @media (max-width: 768px) {
+                    padding: 64px 0 0 0;
+                }
+                
                 
                 &--ultimo {
                     margin-top: 16px;

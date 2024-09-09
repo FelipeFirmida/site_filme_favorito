@@ -11,13 +11,19 @@
         max-width: 960px;
         width: 100%;
         margin: 0 auto;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
     }
 
     &__title {
         color: var.$corDoTextoHead;
         display: flex;
         align-items: center;
+        justify-content: center;
         font-size: 2.5rem;
+
 
         img {
             max-width: 60px;
@@ -28,6 +34,12 @@
 
     .header__nav {
         display: inline;
+        
+        @media (max-width: 768px) {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
     }
 
     .header__list {
@@ -38,6 +50,12 @@
             padding: 16px;
             font-weight: bold;
             font-size: 1.5rem;
+
+            @media (max-width: 768px) {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
 
             
         }

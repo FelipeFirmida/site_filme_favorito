@@ -6,6 +6,11 @@
     img {
         max-width: 300px;
         height: auto;
+
+        @media (max-width: 768px) {
+            display: block;
+            margin: 0 auto;
+        }
     }
 
     &__text {

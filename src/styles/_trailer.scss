@@ -1,11 +1,13 @@
 @use 'var';
 
 .trailer{
+    
     padding-top: 64px;
     padding-bottom: 104px;
     background-color: var.$corDeFundoBody2;
 
     &__title{
+        padding: 24px;
         padding-bottom: 32px;
     }
 
@@ -16,7 +18,7 @@
     }
 
     .full-width {
-        width: 800px;
+        width: 100%;
         height: 470px;
         border-radius: 8px;
     }
