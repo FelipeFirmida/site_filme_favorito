@@ -1,0 +1,53 @@
+@use 'var';
+
+.header {
+    background-color: var.$corDeFundoHead;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem;
+        max-width: 960px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__title {
+        color: var.$corDoTextoHead;
+        display: flex;
+        align-items: center;
+        font-size: 2.5rem;
+
+        img {
+            max-width: 60px;
+            margin-right: 16px;
+            border-radius: 0.5rem;
+        }
+    }
+
+    .header__nav {
+        display: inline;
+    }
+
+    .header__list {
+        display: inline;
+        
+        &__item{
+            display: inline-block;
+            padding: 16px;
+            font-weight: bold;
+            font-size: 1.5rem;
+
+            
+        }
+        &__links{
+            color: var.$corDoTextoHead;
+            display: inline;
+            
+            &:hover {
+                color: var.$corDoTextoHover;
+            }
+        }
+    }
+}

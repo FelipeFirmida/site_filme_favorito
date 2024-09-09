@@ -1,0 +1,58 @@
+@use 'var';
+
+.personagens {
+    background-color: var.$corDeFundoBody1;
+    padding-top: 32px;
+    padding-bottom: 104px;
+
+    .container {
+        display: block;
+    }
+
+    &__title {
+        text-align: center;
+        padding-bottom: 32px;
+    }
+
+    &__gallery {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+
+        &__item {
+                padding: 8px;
+                font-weight: bold;
+                text-align: match-parent;
+                
+
+                
+
+            .image-container{
+                text-align: center;
+                color: var.$corDoTextoChar;
+
+                &:hover {
+                    transform: scale(1.1);
+                    color: var.$corDoTitulo;
+                }
+            }
+            
+            img{
+            display: block;
+            padding-bottom: 8px;
+            border-radius: 3px;
+            height: 150px;
+            width: 100px;
+            margin: 0 auto;
+            }
+
+            p {
+                font-weight: 400;
+                text-align: match-parent;
+            }
+        }
+    }
+    
+    &__gallery > :nth-last-child(4) {
+        grid-column: 2;        
+    }
+}

@@ -1,0 +1,20 @@
+.sinopse {
+    padding: 24px;
+    padding-top: 80px;
+    padding-bottom: 144px;
+    
+    img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    &__text {
+        padding-left: 32px;
+
+        &__title {
+            padding-bottom: 16px;
+        }
+
+    }
+
+}

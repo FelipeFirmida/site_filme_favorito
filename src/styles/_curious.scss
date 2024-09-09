@@ -1,0 +1,44 @@
+@use 'var';
+
+.curiosidades {
+    background-color: var.$corDeFundoBody2;
+    padding-bottom: 80px;
+
+        
+    
+
+    .container {
+        display: block;
+    }
+
+    &__title {
+        text-align: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    &__conteudo {
+        display: flex;
+        align-items: space-between;
+
+            &__texto {
+                padding: 64px 64px 0 0;
+                
+                &--ultimo {
+                    margin-top: 16px;
+                }
+            }
+
+            &__button {
+                background-color: var.$corDeFundoHead;
+                color: var.$corDoTextoHead;
+                padding: 8px;
+                margin-top: 24px;
+                border-radius: 8px;
+                
+                    &:hover {
+                        color: var.$corDoTextoHover;
+                    }
+            }
+    }
+}

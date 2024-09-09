@@ -1,0 +1,24 @@
+@use 'var';
+
+.trailer{
+    padding-top: 64px;
+    padding-bottom: 104px;
+    background-color: var.$corDeFundoBody2;
+
+    &__title{
+        padding-bottom: 32px;
+    }
+
+    .container {
+        display: block;
+        text-align: center;
+        
+    }
+
+    .full-width {
+        width: 800px;
+        height: 470px;
+        border-radius: 8px;
+    }
+
+}

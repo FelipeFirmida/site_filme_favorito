@@ -1,0 +1,34 @@
+@use 'var';
+
+.footer {
+    background-color: var.$corDeFundoHead;
+    padding-bottom: 16px;
+
+    .container {
+        display: block;
+    }
+
+    &__title, .text-container {
+        display: block;
+        text-align: center;
+    }  
+
+    &__title{
+        color: var.$corDoTextoHead;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        padding: 16px 0;
+
+        img {
+            max-width: 60px;
+            border-radius: 0.5rem;
+        }
+    }
+
+    &__text {
+        color: var.$corDoTextoHead;
+        padding-bottom: 8px;
+    }
+}
